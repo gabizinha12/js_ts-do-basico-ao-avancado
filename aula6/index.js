@@ -18,3 +18,6 @@ console.log(nome);
 let nomeCliente = "João";
 console.log(nomeCliente);
 // Não podem iniciar com números
+// camelCase
+// case sensitive
+// não utilize var, utilize let
