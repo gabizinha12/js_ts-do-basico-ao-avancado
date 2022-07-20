@@ -1,4 +1,4 @@
-const numero = prompt("Digite um número: ");
+const numero = Number(prompt("Digite um número: "));
 const numeroTitulo = document.getElementById("numero-titulo");
 const div = document.getElementById("text");
 numeroTitulo.innerText = `${numero}`;
@@ -13,6 +13,6 @@ div.innerHTML += `Arredondando pra baixo: <strong>${Math.floor(
 div.innerHTML += `Arredondando pra cima: <strong>${Math.ceil(
   numero
 )}</strong></br>`;
-div.innerHTML += `Com duas casas decimais: <strong>${Number(numero).toFixed(
+div.innerHTML += `Com duas casas decimais: <strong>${numero.toFixed(
   2
 )}</strong></br>`;
