@@ -1,6 +1,7 @@
 const numero = prompt("Digite um número: ");
 const numeroTitulo = document.getElementById("numero-titulo");
 const div = document.getElementById("text");
+numeroTitulo.innerText = `${numero}`;
 div.innerHTML += `Raiz quadrada: <strong>${Math.sqrt(numero)}</strong></br>`;
 div.innerHTML += `${numero} é inteiro:<strong>${Number.isInteger(
   numero
