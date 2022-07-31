@@ -11,20 +11,29 @@ function main() {
     if (isNaN(peso) || isNaN(altura)) {
       resultado.innerHTML = `<span style="background-color:#B22222">Peso inválido</span>`;
     } else if (imc < 18.5) {
-      resultado.innerHTML += `<span style="background-color:#7FFFD4	">Seu IMC é ${imc} (Abaixo do peso)</span>`;
+      resultado.innerHTML += `<span style="background-color:#7FFFD4	">Seu IMC é ${imc.toFixed(
+        2
+      )} (Abaixo do peso)</span>`;
     } else if (imc >= 18.5 && imc < 24.9) {
-      resultado.innerHTML += `<span style="background-color:#7FFFD4;  display: block;
-      width: 100%;
-      margin-bottom: 10px;font-size: 18px;
-      height: 50px;">Seu IMC é ${imc}  (Peso normal)</span>`;
+      resultado.innerHTML += `<span style="background-color:#7FFFD4;">Seu IMC é ${imc.toFixed(
+        2
+      )}  (Peso normal)</span>`;
     } else if (imc >= 25 && imc < 29.9) {
-      resultado.innerHTML += `<span style="background-color:#7FFFD4	">Seu IMC é ${imc} (Sobrepeso)</span>`;
+      resultado.innerHTML += `<span style="background-color:#7FFFD4	">Seu IMC é ${imc.toFixed(
+        2
+      )} (Sobrepeso)</span>`;
     } else if (imc >= 30 && imc < 34.9) {
-      resultado.innerHTML += `<span style="background-color:#7FFFD4	">Seu IMC é ${imc} (Obesidade grau I)</span>`;
+      resultado.innerHTML += `<span style="background-color:#7FFFD4	">Seu IMC é ${imc.toFixed(
+        2
+      )} (Obesidade grau I)</span>`;
     } else if (imc >= 35 && imc < 39.9) {
-      resultado.innerHTML += `<span style="background-color:#7FFFD4; width: 400px;">Seu IMC é ${imc} (Obesidade grau II)</span>`;
+      resultado.innerHTML += `<span style="background-color:#7FFFD4; ">Seu IMC é ${imc.toFixed(
+        2
+      )} (Obesidade grau II)</span>`;
     } else if (imc > 40) {
-      resultado.innerHTML += `<span style="background-color:#7FFFD4	">Seu IMC é ${imc}  (Obesidade grau III)</span>`;
+      resultado.innerHTML += `<span style="background-color:#7FFFD4	">Seu IMC é ${imc.toFixed(
+        2
+      )}  (Obesidade grau III)</span>`;
     }
   });
 }
